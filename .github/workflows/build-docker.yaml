@@ -20,5 +20,5 @@ jobs:
       - name: push image to docker hub
         run: |
           docker login -u crimson02 -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push crimson02/devops-qr-code-backend:latest
-          docker push crimson02/devops-qr-code-frontend:latest
+          docker push crimson02/fast-api-backend:latest
+          docker push crimson02/nextjs-frontend:latest
