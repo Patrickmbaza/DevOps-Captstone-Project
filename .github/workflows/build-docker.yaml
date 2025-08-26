@@ -15,8 +15,8 @@ jobs:
         uses: actions/checkout@v4
       - name: build image
         run: |
-          docker build ./api/ -t rishabkumar7/devops-qr-code-backend:latest
-          docker build ./front-end-nextjs/ -t rishabkumar7/devops-qr-code-frontend:latest
+          docker build ./api/ -t crimson02/fast-api-backend:latest
+          docker build ./front-end-nextjs/ -t crimson02/nextjs-frontend:latest
       - name: push image to docker hub
         run: |
           docker login -u crimson02 -p ${{ secrets.DOCKER_HUB_TOKEN }}
